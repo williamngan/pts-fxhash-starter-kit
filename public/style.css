@@ -23,4 +23,4 @@ a:hover {
   justify-content: center;
   overflow: scroll;
 }
-#pts { background-color: #f1f3f7; width: 90vh; height: 90vh; }
+#pts { background-color: #f1f3f7; width: min(100vw, 100vh); height: min(100vw, 100vh); }
