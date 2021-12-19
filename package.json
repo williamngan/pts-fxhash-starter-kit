@@ -1,15 +1,17 @@
 {
-  "name": "fxhash-boilerplate-webpack",
-  "version": "1.0.0",
-  "description": "a boilerplate to create a generative token on fxhash",
+  "name": "pts-fxhash-starter-kit",
+  "version": "0.1.0",
+  "description": "Pts.js support (with an example demo) for your own fxhash projects",
   "main": "index.js",
-  "author": "fxhash",
-  "license": "MIT",
+  "author": "William Ngan",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.prod.js",
     "start": "webpack serve --config ./config/webpack.config.dev.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "pts": "^0.10.9"
+  },
   "devDependencies": {
     "adm-zip": "^0.5.9",
     "copy-webpack-plugin": "^9.0.1",

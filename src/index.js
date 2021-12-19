@@ -1,29 +1,9 @@
-// these are the variables you can use as inputs to your algorithms
-console.log(fxhash)   // the 64 chars hex number fed to your algorithm
-console.log(fxrand()) // deterministic PRNG function, use it instead of Math.random()
+// You can create multiple fxhash demos in this repo. Just import the Pts `space` and `play` it.
 
-// note about the fxrand() function 
-// when the "fxhash" is always the same, it will generate the same sequence of
-// pseudo random numbers, always
+import space from "./my_first_piece/index"
 
-//----------------------
-// defining features
-//----------------------
-// You can define some token features by populating the $fxhashFeatures property
-// of the window object.
-// More about it in the guide, section features:
-// [https://fxhash.xyz/articles/guide-mint-generative-token#features]
-//
-// window.$fxhashFeatures = {
-//   "Background": "Black",
-//   "Number of lines": 10,
-//   "Inverted": true
-// }
 
-// this code writes the values to the DOM as an example
-const container = document.createElement("div")
-container.innerText = `
-  random hash: ${fxhash}\n
-  some pseudo random values: [ ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()},... ]\n
-`
-document.body.prepend(container)
+// Use `play()` to run continuously, or `playOnce()` to render once.
+// Learn more at https://ptsjs.org
+
+space.bindMouse().bindTouch().play();

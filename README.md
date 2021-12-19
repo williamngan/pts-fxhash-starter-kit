@@ -1,4 +1,15 @@
-FXHASH Generative Token webpack boilerplate
+FXHASH + Pts.js starter kit
+================
+
+This repo is a fork from ["FXHASH Generative Token webpack boilerplate"](https://github.com/fxhash/fxhash-webpack-boilerplate) with an example use of [Pts.js](https://ptsjs.org) and some utilty functions. We hope this will get you started quickly using Pts.js for generative art projects.
+
+Since fxhash is still in beta, please refer to the original fxhash [repo]((https://github.com/fxhash/fxhash-webpack-boilerplate)) and [website](https://fxhash.xyz) for the latest instructions.
+
+This repo is experimental and may be out-of-sync with fxhash in the future. Please file issues or send a PR to help improve it.
+
+===========================================
+
+README from the [original FXHASH boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate) (Dec 2021 version)
 ================
 
 A boilerplate to automate and ease the creation of Generative Tokens on fxhash. This project uses [webpack](https://webpack.js.org/) and [webpack-dev-server](https://github.com/webpack/webpack-dev-server) to improve the development and deployment experience.
