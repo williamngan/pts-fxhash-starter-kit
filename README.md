@@ -7,6 +7,10 @@ Since fxhash is still in beta, please refer to the original fxhash [repo]((https
 
 This repo is experimental and may be out-of-sync with fxhash in the future. Please file issues or send a PR to help improve it.
 
+You can also collect the demo included in this repo as a "postcard" on fxhash for 0.1tz [here](https://www.fxhash.xyz/generative/3921). My other fxhah mints are [here](https://www.fxhash.xyz/u/William%20Ngan).
+
+![an image of the included demo](./example.png)
+
 ===========================================
 
 README from the [original FXHASH boilerplate](https://github.com/fxhash/fxhash-webpack-boilerplate) (Dec 2021 version)
