@@ -40,7 +40,7 @@ const count = {
 /// The following are Pts.js code. Learn more at https://ptsjs.org
 
 // Initiate Space and Form
-const space = new CanvasSpace("#pts").setup({bgcolor: background, resize: true, retina: true});
+const space = new CanvasSpace("#canvas").setup({bgcolor: background, resize: true, retina: true});
 const form = space.getForm();
 let currBound = new Bound();
 let angle = 0;
@@ -62,11 +62,12 @@ space.add( {
     form.stroke("#fff", 1).fill(foreground).polygons( rects );
 
     // draw some text
-    form.font(30, 'bold');
-    form.fillOnly('#fff').text( [20, 50], `Background: ${feature('Background')}` );
-    form.fillOnly('#fff').text( [20, 80],  `Foreground: ${feature('Foreground')}`);
-    form.fillOnly('#fff').text( [20, 110], `Rectangles: ${feature('Rectangles')}` );
-    form.fillOnly('#fff').text( [20, 140], `Rotation: ${feature('Rotation')}` );
+    const fontsize = Math.min(40, currBound.height*0.1/space.pixelScale);
+    form.font(fontsize, 'bold');
+    form.fillOnly('#fff').text( [fontsize, fontsize*1.5], `Background: ${feature('Background')}` );
+    form.fillOnly('#fff').text( [fontsize, fontsize*2.5],  `Foreground: ${feature('Foreground')}`);
+    form.fillOnly('#fff').text( [fontsize, fontsize*3.5], `Rectangles: ${feature('Rectangles')}` );
+    form.fillOnly('#fff').text( [fontsize, fontsize*4.5], `Rotation: ${feature('Rotation')}` );
   },
 
   // Optional interaction handler
@@ -74,7 +75,8 @@ space.add( {
 
   // Optional resize handler
   resize: (bound, evt) => { 
-    // this is not used in this demo, but can be useful if you need to track resizing
+    // When the window resizes, the canvas will resize automatically via css. 
+    // We track and update the bound of the space here so that we can update the font size in animate().
     currBound = bound; 
   }
 })
